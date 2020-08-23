@@ -29,8 +29,6 @@ def customer_details():
 @app.route("/predict", methods=["GET", "POST"])
 def predict():
     data = request.form
-    # data_back = {k:v for k,v in data}
-    # print(data_back)
     loan_amnt = data["loan_amnt"]
     term = data["term"]
     int_rate = data["int_rate"]
